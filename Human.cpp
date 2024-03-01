@@ -2,10 +2,14 @@
 #include <iostream>
 using namespace std;
 
+
+Human::Human(){
+    cout << "Enter the name of Player:";
+    cin >> user_name;
+}
 char Human::makeMove(){
     
-    char input_move;
-    cout << "Enter move:";
+    cout << "Enter move: ";
     cin >> input_move;
 
 
@@ -14,10 +18,6 @@ char Human::makeMove(){
 };
 
 string Human::getName(){
-
-    string user_name;
-    cout << "Enter the name of the player:";
-    cin >> user_name;
 
     return user_name;
 }

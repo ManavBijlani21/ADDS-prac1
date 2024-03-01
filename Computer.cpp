@@ -5,15 +5,15 @@ using namespace std;
 
 string Computer::getName(){
 
-    string return_name="Computer";
+    user_name="Computer";
 
-    return return_name;
+    return user_name;
 }
 
 
 char Computer::makeMove(){
 
-    char return_turn='R';
+    input_move='R';
 
-    return return_turn;
+    return input_move;
 }

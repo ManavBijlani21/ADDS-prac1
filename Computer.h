@@ -1,14 +1,18 @@
 #pragma once
 #include <iostream>
 #include "Player.h"
+using namespace std;
 
 
 class Computer:public Player{
-    private:
+    protected:
+
+    char input_move;
+    string user_name;
 
     public:
-    virtual char makeMove();
-    virtual string getName();
+    char makeMove();
+    string getName();
 
 };
 

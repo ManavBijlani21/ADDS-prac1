@@ -7,8 +7,9 @@ using namespace std;
 
 class Player{
 
-    private:
-
+    protected:
+    string user_name;
+    char input_move;
 
     public:
 

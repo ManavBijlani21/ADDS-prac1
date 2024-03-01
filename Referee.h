@@ -2,11 +2,11 @@
 using namespace std;
 #include <iostream> 
 #include "Player.h"
+#include "Human.h"
+#include "Computer.h"
+
 
 class Referee{
-    private:
-
-
 
     public:
     Referee();

@@ -3,3 +3,13 @@
 using namespace std;
 
 
+char Player::makeMove(){
+//Do nothing
+};
+
+
+string Player::getName(){
+//Do nothing
+
+};
+

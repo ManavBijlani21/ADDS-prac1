@@ -1,3 +1,4 @@
+#pragma once
 #include "Player.h"
 #include <iostream>
 using namespace std;
@@ -5,12 +6,15 @@ using namespace std;
 
 
 class Human:public Player{
-    private:
+    protected:
+    char input_move;
+    string user_name;
 
 
     public:
-    virtual char makeMove();
-    virtual string getName();
+    Human();
+    char makeMove();
+    string getName();
 
 };
 
