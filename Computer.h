@@ -11,8 +11,9 @@ class Computer:public Player{
     string user_name;
 
     public:
-    char makeMove();
-    string getName();
+    Computer();
+    char makeMove() override;
+    string getName() override;
 
 };
 

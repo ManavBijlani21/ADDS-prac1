@@ -15,22 +15,23 @@ int main(){
     Computer player2;
     Referee referee;
 
-    Player* winner=referee.refGame(&player1,&player2);
+    Player* winner= referee.refGame(&player1,&player2);
 
-    if (winner==nullptr){
-        std::cout << "It's a Tie" << std::endl;
+    if (winner==&player1){
+        std::cout << player1.getName() << "wins!" << std::endl;
     }
 
-    else if (winner->getName()!="Computer"){
-        std::cout << player1.getName() << " Wins" << std::endl;
-
+    else if(winner==&player2){
+        std::cout << player2.getName() << "wins!" << std::endl;
     }
 
-    else {
-        std::cout << "Computer Wins" << std::endl;
+    else{
+        std::cout << "It's a tie game!" << std::endl;
     }
+
 
     return 0;
+
 }
 
 

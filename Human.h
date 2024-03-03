@@ -12,9 +12,9 @@ class Human:public Player{
 
 
     public:
-    Human();
-    char makeMove();
-    string getName();
+    Human(string name="Human");
+    char makeMove() override;
+    string getName() override;
 
 };
 

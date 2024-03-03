@@ -13,16 +13,21 @@ Player* Referee::refGame(Player* player1,Player* player2){
 
 
     char final_move=player1->makeMove();
-    
-    if (final_move=='S'){
-        return player2;
+
+
+    if (final_move=='R'){
+        std::cout << "It's a tie!" << std::endl;
+        return nullptr;
     }
 
     else if (final_move=='P'){
+        std::cout << player1->getName() << "Wins" << std::endl;
         return player1;
     }
 
     else{
-        return nullptr;
-    }
+        std::cout << "Computer Wins" << std::endl;
+        return player2;
+    }; 
+
 }

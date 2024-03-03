@@ -3,12 +3,8 @@
 using namespace std;
 
 
-Human::Human(){
-    cin >> user_name;
-
-    if (user_name.empty()){
-        user_name="Human";
-    }
+Human::Human(string name){
+    user_name=name;
 }
 char Human::makeMove(){
     

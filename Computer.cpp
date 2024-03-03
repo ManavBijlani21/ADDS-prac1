@@ -3,6 +3,10 @@
 using namespace std;
 #include "Computer.h"
 
+Computer::Computer(){
+    user_name="Computer";
+}
+
 string Computer::getName(){
 
     user_name="Computer";
@@ -13,7 +17,5 @@ string Computer::getName(){
 
 char Computer::makeMove(){
 
-    input_move='R';
-
-    return input_move;
+    return 'R';
 }
