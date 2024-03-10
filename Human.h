@@ -12,7 +12,7 @@ class Human:public Player{
 
 
     public:
-    Human();
+    Human(const string& name="Human");
     Move* makeMove() override;
     string getName() override;
 

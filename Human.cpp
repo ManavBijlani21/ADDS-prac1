@@ -5,9 +5,9 @@ using namespace std;
 
 
 
-Human::Human(){
-    cout<< "Enter the name of Player: ";
-    cin >> user_name;
+Human::Human(const string& name="Human"){
+    //
+
 }
 
 
