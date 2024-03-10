@@ -5,9 +5,12 @@ using namespace std;
 
 
 
-Human::Human(const string& name="Human"){
-    //
+Human::Human(){
+    user_name="Human";
+}
 
+Human::Human(string name){
+    this->user_name=name;
 }
 
 
