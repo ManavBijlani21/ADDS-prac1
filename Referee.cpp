@@ -6,9 +6,6 @@ using namespace std;
 #include "Computer.h"
 #include "Move.h"
 
-Referee::Referee(){
-    //Do nothing
-};
 
 Player* Referee::refGame(Player* player1,Player* player2){
 

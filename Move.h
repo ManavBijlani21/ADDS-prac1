@@ -110,7 +110,7 @@ class Ninja:public Move{
 class Zombie:public Move{
 
     protected:
-    std::vector<std::string> defeat_list={"Prate","Monkey"};
+    std::vector<std::string> defeat_list={"Pirate","Monkey"};
 
     public:
     std::string getName() override;
