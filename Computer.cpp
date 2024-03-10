@@ -2,6 +2,10 @@
 #include <iostream>
 using namespace std;
 #include "Computer.h"
+#include <vector>
+#include <string>
+#include <cstdlib>
+#include <ctime>
 
 string Computer::getName(){
 
@@ -10,41 +14,43 @@ string Computer::getName(){
 
 
 Move* Computer::makeMove(){
+    srand(time(nullptr));
+    vector<string> array_choices={"Rock","Scissors","Paper","Monkey","Robot","Pirate","Ninja","Zombie"};
 
-    string playerInput;
+    int random_index=rand() % array_choices.size();
 
-    cout<< "Enter Move: ";
-    cin>> playerInput;
 
-    if (playerInput=="Rock"){
+    
+
+    if (array_choices[random_index]=="Rock"){
         return new Rock();
     }
 
-    else if(playerInput=="Scissors"){
+    else if(array_choices[random_index]=="Scissors"){
         return new Scissors();
     }
 
-    else if(playerInput=="Paper"){
+    else if(array_choices[random_index]=="Paper"){
         return new Paper();
     }
 
-    else if(playerInput=="Monkey"){
+    else if(array_choices[random_index]=="Monkey"){
         return new Monkey();
     }
 
-    else if(playerInput=="Robot"){
+    else if(array_choices[random_index]=="Robot"){
         return new Robot();
     }
 
-    else if(playerInput=="Pirate"){
+    else if(array_choices[random_index]=="Pirate"){
         return new Pirate();
     }
 
-    else if(playerInput=="Ninja"){
+    else if(array_choices[random_index]=="Ninja"){
         return new Ninja();
     }
 
-    else if(playerInput=="Zombie"){
+    else if(array_choices[random_index]=="Zombie"){
         return new Zombie();
     }
 
