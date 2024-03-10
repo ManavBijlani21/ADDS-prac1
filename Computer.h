@@ -11,7 +11,6 @@ class Computer:public Player{
     std::string user_name;
 
     public:
-    Computer();
     Move*  makeMove() override;
     std::string getName() override;
 
