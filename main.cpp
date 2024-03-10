@@ -3,35 +3,40 @@
 #include "Human.h"
 #include "Computer.h"
 #include "Referee.h"
+#include "Move.h"
 using namespace std;
 
 //This is the main file for the program
 
 int main(){
 
-    //Creating the instances of human and computer
+    //Declare the instances of two players
+    Human Player1;
+    Human Player2;
 
-    Human player1;
-    Computer player2;
+
+    //Take the user_name input
+    string player1_name=Player1.getName();
+    string player2_name=Player2.getName();
+
+    //Pass the two users as a reference to the Referee class
     Referee referee;
 
-    Player* winner= referee.refGame(&player1,&player2);
+    Player* Winner=referee.refGame(&Player1,&Player2);
 
-    if (winner==&player1){
-        std::cout << player1.getName() << "wins!" << std::endl;
+
+    //Conditional statements to check who wins and print the desired result
+    if (Winner==nullptr){
+        cout << "The game is tied!" << endl;
     }
 
-    else if(winner==&player2){
-        std::cout << player2.getName() << "wins!" << std::endl;
+    else if(Winner->getName()==player1_name){
+        cout << player1_name << " Wins the game!" << endl;
     }
 
     else{
-        std::cout << "It's a tie game!" << std::endl;
+        cout << player2_name << "Wins the game!" << endl;
     }
-
-
-    return 0;
-
 }
 
 

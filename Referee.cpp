@@ -4,6 +4,7 @@
 using namespace std;
 #include "Human.h"
 #include "Computer.h"
+#include "Move.h"
 
 Referee::Referee(){
     //Do nothing
@@ -11,23 +12,32 @@ Referee::Referee(){
 
 Player* Referee::refGame(Player* player1,Player* player2){
 
+    Move* move_object_1=player1->makeMove();
+    Move* move_object_2=player2->makeMove();
 
-    char final_move=player1->makeMove();
-
-
-    if (final_move=='R'){
-        std::cout << "It's a tie!" << std::endl;
+    if ((!(move_object_1->Movelogic(move_object_1->getName(),move_object_2->getName()))) && (!(move_object_2->Movelogic(move_object_2->getName(),move_object_1->getName())))){
+        // delete move_object_1;
+        // delete move_object_2;
         return nullptr;
     }
 
-    else if (final_move=='P'){
-        std::cout << player1->getName() << "Wins" << std::endl;
+    else if(move_object_1->Movelogic(move_object_1->getName(),move_object_2->getName())){
+
+        // delete move_object_1;
+        // delete move_object_2;
         return player1;
+
     }
 
     else{
-        std::cout << "Computer Wins" << std::endl;
         return player2;
-    }; 
+    }
 
 }
+
+
+
+
+
+
+

@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Player.h"
+#include "Move.h"
 using namespace std;
 
 
@@ -12,7 +13,7 @@ class Computer:public Player{
 
     public:
     Computer();
-    char makeMove() override;
+    Move*  makeMove() override;
     string getName() override;
 
 };

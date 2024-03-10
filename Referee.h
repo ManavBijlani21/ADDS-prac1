@@ -1,5 +1,4 @@
 #pragma once 
-using namespace std;
 #include <iostream> 
 #include "Player.h"
 #include "Human.h"
