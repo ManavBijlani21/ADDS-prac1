@@ -1,7 +1,7 @@
-#include <iostream>
 #pragma once
-using namespace std;
 #include <string>
+#include <iostream>
+using namespace std;
 #include "Move.h"
 
 

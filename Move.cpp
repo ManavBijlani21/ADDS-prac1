@@ -1,8 +1,8 @@
-#include "Move.h"
-#include "Player.h"
 #include <iostream>
-using namespace std;
+#include "Player.h"
+#include "Move.h"
 #include <string.h>
+using namespace std;
 
 
 

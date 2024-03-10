@@ -1,7 +1,8 @@
-#include "Human.h"
 #include <iostream>
-using namespace std;
+#include "Human.h"
 #include "Move.h"
+using namespace std;
+
 
 
 Human::Human(){
