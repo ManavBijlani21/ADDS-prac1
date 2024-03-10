@@ -6,7 +6,7 @@
 
 class Move{
 
-    protected:
+    private:
 
     std::vector<std::string> defeat_list;
 
@@ -20,7 +20,7 @@ class Move{
 
 class Rock:public Move{
 
-    protected:
+    private:
     std::vector<std::string> defeat_list={"Scissors"};
 
 
@@ -34,7 +34,7 @@ class Rock:public Move{
 
 class Paper:public Move{
 
-    protected:
+    private:
     std::vector<std::string> defeat_list={"Rock"};
 
     public:
@@ -47,8 +47,7 @@ class Paper:public Move{
 
 class Scissors:public Move{
 
-    protected:
-    protected:
+    private:
     std::vector<std::string> defeat_list={"Paper"};
 
     public:
@@ -60,7 +59,7 @@ class Scissors:public Move{
 
 class Robot:public Move{
 
-    protected:
+    private:
     std::vector<std::string> defeat_list={"Ninja","Zombie"};
 
     public:
@@ -72,7 +71,7 @@ class Robot:public Move{
 
 class Monkey:public Move{
 
-    protected:
+    private:
     std::vector<std::string> defeat_list={"Ninja","Robot"};
 
 
@@ -85,7 +84,7 @@ class Monkey:public Move{
 
 class Pirate:public Move{
 
-    protected:
+    private:
     std::vector<std::string> defeat_list={"Robot","Monkey"};
 
     public:
@@ -97,7 +96,7 @@ class Pirate:public Move{
 
 class Ninja:public Move{
 
-    protected:
+    private:
     std::vector<std::string> defeat_list={"Pirate","Zombie"};
 
     public:
@@ -109,7 +108,7 @@ class Ninja:public Move{
 
 class Zombie:public Move{
 
-    protected:
+    private:
     std::vector<std::string> defeat_list={"Pirate","Monkey"};
 
     public:
