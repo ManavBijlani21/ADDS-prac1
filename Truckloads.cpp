@@ -5,6 +5,11 @@ using namespace std;
 
 int Truckloads::numTrucks(int numCrates,int loadSize){
     int sum=0;
+
+    if (numCrates<0){
+        return -6000;
+
+    }
     if (numCrates<=loadSize){
         return 1;
     }

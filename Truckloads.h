@@ -14,14 +14,14 @@ class Truckloads{
 };
 
 
-// int main(void){
+int main(void){
 
-//     Truckloads t;
+    Truckloads t;
 
-//     int result=t.numTrucks(15,1);
+    int result=t.numTrucks(15,1);
 
-//     std::cout << "Result:" << result << std::endl;
-//     return 0;
+    std::cout << "Result:" << result << std::endl;
+    return 0;
 
 
-// }
+}
