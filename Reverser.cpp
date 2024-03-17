@@ -4,18 +4,18 @@
 #include <string>
 using namespace std;
 
-// Getting the integer function reverseDigit from REverser class to reverse the input digits.
+// Implementation of the reverseDigit function.
 int Reverser::reverseDigit(int digit, int reversedDigit) {
 
-  // Returning the vakue -1 if the digit is less than 0.
+  // Encountering the negative value exception.
   if (digit < 0) {
     return -1;
 
-    // Returing the reversedValue if the value is equal to 0.
+    // Encountering the 0 value exception. 
   } else if (digit == 0) {
     return reversedDigit;
 
-    // Reversing the digits in either case.
+    // Reversing the digits.
   } else {
     reversedDigit = reversedDigit * 10 + (digit % 10);
     return reverseDigit(digit / 10, reversedDigit);
@@ -23,14 +23,14 @@ int Reverser::reverseDigit(int digit, int reversedDigit) {
 }
 
 
-// Creating the function reverseString from the class Reverse.
+// Implementing the reverseString function().
 std::string Reverser::reverseString(std::string characters) {
-    // Base case: when the string is empty
+    // Empty string exception
     if (characters.empty()) {
         return "ERROR";
     }
 
-    // Recursive case: reversing the stirng and appending the last reversed word to the revesed stirng
+    // Case for implementing recursion
     char firstChar = characters[0];
     std::string stringReversed = reverseString(characters.substr(1));
     return stringReversed + firstChar;
